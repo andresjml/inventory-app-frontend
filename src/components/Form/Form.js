@@ -23,7 +23,7 @@ function Form({toggle,item, onChangeForm, onEditItem}){
             onhand: parseInt(onhand)
         }
 
-        fetch(`http://localhost:3000/inventory/${id}`, {
+        fetch(`https://inventory-app-andres-backend.herokuapp.com/inventory/${id}`, {
           method: "PATCH",
           headers: {
             "Content-Type": "application/json",

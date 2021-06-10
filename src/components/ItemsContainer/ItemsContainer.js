@@ -11,7 +11,7 @@ function ItemsContainer(){
     
 
     useEffect(()=>{
-        fetch('http://localhost:3000/inventory')
+        fetch('https://inventory-app-andres-backend.herokuapp.com/inventory')
             .then(r => r.json())
             .then(setData)
             

@@ -16,7 +16,7 @@ function Items({data, onEditItem, onDelete}){
     function handleDeleteClick(){
         const obj ={method: "DELETE"}
 
-        fetch(`http://localhost:3000/inventory/${id}`, obj)
+        fetch(`https://inventory-app-andres-backend.herokuapp.com/inventory/${id}`, obj)
             .then(res => res.json())
             .then(onDelete(data));            
         

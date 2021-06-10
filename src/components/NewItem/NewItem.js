@@ -28,7 +28,7 @@ function NewItem({onNewItem}) {
             onhand: parseInt(formData.onhand)
         }
 
-        fetch(`http://localhost:3000/inventory/`, {
+        fetch(`https://inventory-app-andres-backend.herokuapp.com/inventory`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
